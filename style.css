@@ -125,6 +125,7 @@ body {
     align-items: center;
     justify-content: space-between;
     padding-right: 0;
+    position: relative;
 }
 
 #element h1 {
@@ -140,3 +141,104 @@ body {
 .elementlast {
     border-bottom: 1px solid #888;
 }
+
+#element img {
+    display: none;
+    height: 150%;
+    z-index: 10;
+    position: absolute;
+}
+
+#about {
+    width: 100%;
+    background-color: black;
+    padding: 10vw 5vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    padding-left: 30vw;
+}
+
+#imgabout img {
+    height: 200px;
+    border-radius: 50%;
+    background-size: cover;
+}
+
+#txtabout {
+    width: 30rem;
+}
+
+#txtabout h5 {
+    text-transform: uppercase;
+    opacity: .6;
+    padding-bottom: 10px;
+}
+
+#txtabout p {
+    font-size: 14px;
+    line-height: 1.6;
+    opacity: .9;
+}
+
+#txtabout button {
+    background-color: transparent;
+    margin-top: 20px;
+    padding: 5px 15px;
+    border: 1px solid white;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+#follow {
+    background-color: black;
+    padding: 20px 30px;
+    line-height: 1.5;
+    padding-bottom: 7vw;
+}
+
+#follow h5 {
+    text-transform: uppercase;
+    opacity: .6;
+    font-size: 10px;
+    letter-spacing: 1px;
+}
+
+#follow a {
+    font-size: 14px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+#footer {
+    background-color: black;
+    padding: 0 40px 20px 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#lfooter {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    text-transform: uppercase;
+}
+
+
+#rfooter ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+    gap: 20px;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+.td{
+    text-decoration: none;
+}
+
