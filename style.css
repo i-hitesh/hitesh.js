@@ -12,14 +12,27 @@ body {
     height: 100%;
 }
 
+#cursorpoint {
+    width: 15px;
+    height: 15px;
+    background-color: white;
+    border-radius: 50%;
+    position: absolute;
+    z-index: 99;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1) .8s;
+    
+}
+
 #main {
     width: 100%;
+    background-color: black;
 }
 
 #home {
     width: 100%;
     height: 100vh;
     background-color: black;
+    position: relative;
 }
 
 #nav {
@@ -238,7 +251,6 @@ body {
     font-size: 14px;
 }
 
-.td{
+.td {
     text-decoration: none;
 }
-

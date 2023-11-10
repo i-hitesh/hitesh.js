@@ -1,0 +1,15 @@
+Smooth scrolling
+GSAP
+Scrolltrigger
+
+for smooth scrolling
+> add file of locomotive.css from locomotive js.
+> add smooth script from same page of js and then change the element value to main component.
+> add script of locomotive-scroll.min.js
+
+
+for gsap
+> attach gsap cdn
+
+
+ 
