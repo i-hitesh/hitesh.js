@@ -15,6 +15,7 @@ function mouseFollower() {
 function homepage() {
     var tl = gsap.timeline();
 
+    // for nav bar
     tl.from("#nav", {
         y: '-10',
         opacity: 0,
@@ -22,11 +23,23 @@ function homepage() {
         ease: Expo.easeInOut
     })
 
+        // for .boundingElement class
         .to(".boundingElement", {
             y: 0,
             ease: Expo.easeInOut,
             duration: 2,
             stagger: .2,
+            delay: -1,
+
+        })
+
+        // for homefooter section
+        .from("#homefooter", {
+            y: -10,
+            ease: Expo.easeInOut,
+            duration: 1.5,
+            delay: -1,
+            opacity: 0,
         })
 
 }
