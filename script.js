@@ -80,15 +80,43 @@ function homepage() {
 
 }
 
+// for image animation
 document.querySelectorAll("#element").forEach(function (element) {
-    element.addEventListener("mousemove", function (details) {
+    var rotate = 0;
+    var diffrot = 0;
+
+    element.addEventListener("mouseleave", function (dets) {
+
         gsap.to(element.querySelector("img"), {
-            opacity: 1,
-            ease: Power1,
+            opacity: 0,
+            ease: Power3,
+            duration: .5,
         });
     });
 
+    element.addEventListener("mousemove", function (dets) {
+
+        var difference = dets.clientY - element.getBoundingClientRect().top;
+        diffrot = dets.clientX - rotate;
+        rotate = dets.clientx;
+
+        gsap.to(element.querySelector("img"), {
+            opacity: 1,
+            ease: Power3,
+            top: difference,
+            left: dets.clientX,
+            rotate: gsap.utils.clamp(-20, 20, diffrot),
+        });
+    });
 });
+
+
+// for time
+let time = document.getElementById("time");
+setInterval(() => {
+    let d = new Date();
+    time.innerHTML = d.toLocaleTimeString();
+}, 1000);
 
 
 
