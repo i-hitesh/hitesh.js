@@ -121,14 +121,15 @@ body {
     text-transform: uppercase;
 }
 
-#homefooter #iconset {
+#iconset {
     display: flex;
     align-items: center;
     justify-content: space-around;
     gap: 5px;
 }
 
-#homefooter .circle {
+
+.circle {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -137,6 +138,7 @@ body {
     border-radius: 50%;
     background-color: #888;
 }
+
 
 #midd {
     padding: 120px 8vw 0 3vw;
@@ -219,6 +221,12 @@ body {
     cursor: pointer;
 }
 
+#txtabout button:hover {
+    color: rgb(238, 161, 176);
+    background-color: rgb(41, 41, 41);
+    transition: .5s;
+}
+
 #follow {
     background-color: black;
     padding: 20px 30px;
@@ -259,13 +267,40 @@ body {
 #rfooter ul {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
     list-style: none;
     gap: 20px;
     text-transform: uppercase;
     font-size: 14px;
 }
 
+
 .td {
     text-decoration: none;
 }
+
+.underline{   
+    position: relative;
+    text-decoration: none;
+}
+
+.underline:after{
+    content: "";
+    position: absolute;
+    background-color: #ff3c78;
+    height:3px;
+    width: 0;
+    left:0;
+    bottom: -8px;  
+    transition: .3s;     
+}
+
+.underline:hover:after{   
+    width: 100%;
+}
+
+.underline:hover{   
+    color: beige;
+}
+
+
