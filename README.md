@@ -9,7 +9,6 @@ Animated this project with GSAP JavaScript Library , built using HTML, CSS, and 
 ## Animated Portfolio
 
 ![Animated Port](res/Demo%20img/Home.JPG "Home Page")
-![Animated Port](res/Demo%20img/Mid.JPG "Main Page")
 
 ## Prerequisites
 
